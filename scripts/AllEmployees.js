@@ -72,7 +72,7 @@ function displayEmployees(allEmployees) {
 async function handleDelete(id) {
   try {
     let resp = await fetch(
-      `https://crud-app-js-xw67.onrender.com/employees/${id}`,
+      `https://crud-app-js-rt88.onrender.com/employees/${id}`,
       { method: "DELETE" },
     );
 

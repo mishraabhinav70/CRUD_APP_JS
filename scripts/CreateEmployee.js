@@ -35,7 +35,7 @@ employeeFormEle.addEventListener("submit", async (e) => {
   };
 
   try {
-    let resp = await fetch("https://crud-app-js-xw67.onrender.com/employees", {
+    let resp = await fetch("https://crud-app-js-rt88.onrender.com/employees", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
@@ -46,7 +46,6 @@ employeeFormEle.addEventListener("submit", async (e) => {
 
     // NAVIGATION
     window.location.href = "AllEmployees.html";
-    
   } catch (err) {
     console.log(err);
     alert("Something went wrong ❌");
