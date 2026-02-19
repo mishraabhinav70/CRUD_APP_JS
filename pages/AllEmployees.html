@@ -3,11 +3,10 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>All Employees</title>
     <link rel="stylesheet" href="/styles/AllEmployees.css" />
   </head>
   <body>
-    <!-- NAVBAR -->
     <nav class="navbar-container">
       <figure class="logo">
         <a href="/index.html">CRUD-APP</a>
@@ -15,15 +14,19 @@
 
       <div class="nav-links">
         <a href="/pages/CreateEmployee.html">Create Employee</a>
-        <a href="/pages/AllEmployees.html">All Employees</a>
+        <a class="active" href="/pages/AllEmployees.html">All Employees</a>
       </div>
     </nav>
-    
-    <section id="employees-container"></section>
 
+    <main class="page-shell">
+      <section class="page-header">
+        <h1>All Employees</h1>
+        <p>Browse, edit, and manage your current team records.</p>
+      </section>
 
+      <section id="employees-container"></section>
+    </main>
 
     <script src="/scripts/AllEmployees.js" type="module"></script>
-
   </body>
 </html>

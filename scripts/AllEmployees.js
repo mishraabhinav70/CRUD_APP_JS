@@ -18,6 +18,15 @@ window.addEventListener("DOMContentLoaded", () => {
 });
 
 function displayEmployees(allEmployees) {
+  if (!allEmployees.length) {
+    employeesContainerEle.innerHTML = `
+      <article class="empty-state">
+        <p>No employees found. Create a new employee to get started.</p>
+      </article>
+    `;
+    return;
+  }
+
   allEmployees.map((emp) => {
     const empCard = document.createElement("article");
     empCard.className = "emp-card";
